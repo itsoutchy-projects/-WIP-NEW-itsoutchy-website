@@ -1,0 +1,111 @@
+:root {
+    --accent: rgb(225, 246, 254)
+}
+
+body {
+    margin: 30px;
+    text-align: center;
+    background-color: black;
+    background-image: url("/assets/images/bg.png");
+    background-repeat: repeat;
+    color: var(--accent);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.biggest {
+    font-size: 95px;
+}
+
+.big {
+    font-size: 65px;
+}
+
+h1[data-glowing = "true"] {
+    color: var(--accent);
+  -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke: 3px var(--accent);
+  text-shadow: 0px 0px 50px rgb(72, 234, 255);
+}
+
+h1[data-glowing = "false"] {
+    color: var(--accent);
+  -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke: 3px rgb(138, 195, 217);
+}
+
+#about {
+    width: 400px;
+    margin: auto;
+}
+
+hr {
+    border-top: 2px solid var(--accent);
+    margin-top: 120px;
+    margin-bottom: 120px;
+    box-shadow: 0px 0px 25px rgb(72, 234, 255);
+}
+
+.show-poster {
+    float: left;
+    border-radius: 10px;
+}
+
+.show-synopsis-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    width: 200px;
+}
+
+button {
+    background-color: black;
+    border: 2px solid var(--accent);
+    padding: 20px;
+    font-size: larger;
+    color: var(--accent);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 200ms;
+}
+
+button:hover {
+    background-color: var(--accent);
+    color: black;
+    box-shadow: 0px 0px 50px rgb(72, 234, 255);
+    padding: 25px;
+}
+
+#projects {
+    text-align: center;
+}
+
+.project {
+    margin-right: 10px;
+    float: left;
+}
+
+nav {
+    border: 3px solid var(--accent);
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
+    padding: 15px;
+    box-shadow: 0px 0px 50px rgb(72, 234, 255);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#home-link {
+    font-size: large;
+    font-weight: bold;
+}
+
+nav > a {
+    margin-right: 30px;
+}
